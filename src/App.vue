@@ -12,9 +12,36 @@
           </el-col>
         </el-row>
       </el-header>
+
       <el-main class="main">
         <router-view :seller="seller" :goods="goods"></router-view>
       </el-main>
+
+      <!-- 对话框 -->
+      <el-dialog
+        class="dialog"
+        title="提示"
+        :visible.sync="dialogVisible"
+        width="100%"
+        :before-close="handleClose"
+      >
+        <div class="content">
+          <h1 class="title">浏览方法:</h1>
+          <ol>
+            <li class="item">1. 用手机浏览器扫描下方二维码浏览</li>
+            <li class="item">2. 用电脑浏览器F12,然后打开手机模式进行浏览</li>
+          </ol>
+          <div class="images">
+            <img src="./assets/QR-code.png" alt="" />
+          </div>
+        </div>
+        <span slot="footer" class="dialog-footer">
+          <el-button @click="dialogVisible = false">取 消</el-button>
+          <el-button type="primary" @click="dialogVisible = false"
+            >确 定</el-button
+          >
+        </span>
+      </el-dialog>
     </el-container>
 
     <!-- 购物车 -->
@@ -38,6 +65,7 @@ export default {
     return {
       seller: appData.seller, //商家数据
       goods: appData.goods,
+      dialogVisible: true,
       arr: [
         {
           path: "/goods",
@@ -60,13 +88,18 @@ export default {
       this.$router.push({
         path: "/goods"
       });
-      this.$alert(
-        "该商场是移动端的，请用手机观看或者浏览器F12打开手机模式观看",
-        "提示",
-        {
-          confirmButtonText: "确定"
-        }
-      );
+      // this.$alert(
+      //   "该商场是移动端的，请用手机观看或者浏览器F12打开手机模式观看",
+      //   "提示",
+      //   {
+      //     confirmButtonText: "确定"
+      //   }
+      // );
+    },
+
+    // 关闭对话框
+    handleClose(done) {
+      done();
     }
   },
   computed: {
@@ -134,5 +167,18 @@ export default {
   padding: 0 !important;
   width: 100%;
   overflow: hidden;
+}
+
+/* 对话框 */
+#app .dialog .title {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+#app .dialog .item {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+#app .dialog .images {
+  text-align: center;
 }
 </style>
