@@ -17,13 +17,13 @@ ui框架：element-ui
 ## 项目效果截图
 
 ### 主页面
-![](https://github.com/dearDreamWeb/vue3-sell.github.io/blob/master/src/assets/1.png)
+![主页面](https://github.com/dearDreamWeb/vue3-sell.github.io/blob/master/src/assets/1.png)
 
 ### 商品详情页
-![](https://github.com/dearDreamWeb/vue3-sell.github.io/blob/master/src/assets/2.png)
+![商品详情页](https://github.com/dearDreamWeb/vue3-sell.github.io/blob/master/src/assets/2.png)
 
 ### 商家详情页
-![](https://github.com/dearDreamWeb/vue3-sell.github.io/blob/master/src/assets/3.png)
+![商家详情页](https://github.com/dearDreamWeb/vue3-sell.github.io/blob/master/src/assets/3.png)
 
 ### 购物车页面
-![](https://github.com/dearDreamWeb/vue3-sell.github.io/blob/master/src/assets/4.png)
+![购物车页面](https://github.com/dearDreamWeb/vue3-sell.github.io/blob/master/src/assets/4.png)
