@@ -1,5 +1,5 @@
 ## 项目名称
->这是用Vue3做的饿了么的商家页面
+>这是用Vue3做的外卖平台的商家页面
 
 ## 项目预览地址
 [预览地址](https://deardreamweb.github.io/vue3-sell.github.io/)（访问可能会有点慢，请耐心等待）
