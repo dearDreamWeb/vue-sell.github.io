@@ -2,7 +2,10 @@
 >这是用Vue做的外卖平台的商家页面
 
 ## 项目预览地址
-[预览地址](https://deardreamweb.github.io/vue-sell.github.io)（访问可能会有点慢，请耐心等待）
+项目打包部署到了github和码云上。  
+[码云版预览地址](https://flyingwxb.gitee.io/vue3-sell.gitee.io)（国内访问会很快）  
+[github版预览地址](https://deardreamweb.github.io/vue-sell.github.io)（国内访问可能会有点慢，请耐心等待）  
+
 
 ## 文件目录结构
 > <font color="#f40" size=5>vue</font>文件夹中里面是vue的文件
